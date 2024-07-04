@@ -1,0 +1,244 @@
+<html>
+<head><title>Hack by MHC_BD or BD-Haker | BD BLACK HAT HACKER</title></head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+#logo{
+border-radius:10000%;
+width:130px;
+hight:100px;
+}
+
+body {
+	background-image:url(https://i.ibb.co/fC2K7tV/how-to-hack-a-wordpress-site-2021.gif);
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: background-image 1s;
+    height: 100vh;
+    margin: 0;
+    position: relative; /* Add this line */
+	background-color:#000;
+}
+
+.worning{
+text-shadow: 0 0 0.5em red;
+color:red;
+border-radius:10px;
+}
+
+#txt{
+font-family: 'Finger Paint', cursive;
+font-family: 'Sue Ellen Francisco', cursive;
+color: red;
+background-attachment:fixed;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size:28px;
+  text-shadow:0 0 5px yellow,0 0 10px #00ffff,0 0 15px white;
+}
+#txt1{
+font-family: 'Sue Ellen Francisco', cursive;
+color: green;
+background-attachment:fixed;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size:28px;
+  -webkit-text-stroke: 2px black;
+  text-shadow:0 0 5px yellow,0 0 10px #00ffff,0 0 15px white;
+}
+
+#icon{
+width:30px;
+hight:1px;
+border-radius:10000000000px;
+}
+
+</style>
+
+
+<body>
+<center>
+<script>
+farbbibliothek = new Array();
+farbbibliothek[0] = new Array("#FF0000","#FF1100","#FF2200","#FF3300","#FF4400","#FF5500","#FF6600","#FF7700","#FF8800","#FF9900","#FFaa00","#FFbb00","#FFcc00","#FFdd00","#FFee00","#FFff00","#FFee00","#FFdd00","#FFcc00","#FFbb00","#FFaa00","#FF9900","#FF8800","#FF7700","#FF6600","#FF5500","#FF4400","#FF3300","#FF2200","#FF1100");
+farbbibliothek[1] = new Array("#00FF00","#000000","#00FF00","#00FF00");
+farbbibliothek[2] = new Array("#00FF00","#FF0000","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00");
+farbbibliothek[3] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040");
+farbbibliothek[4] = new Array("#FF0000","#EE0000","#DD0000","#CC0000","#BB0000","#AA0000","#990000","#880000","#770000","#660000","#550000","#440000","#330000","#220000","#110000","#000000","#110000","#220000","#330000","#440000","#550000","#660000","#770000","#880000","#990000","#AA0000","#BB0000","#CC0000","#DD0000","#EE0000");
+farbbibliothek[5] = new Array("#000000","#000000","#000000","#FFFFFF","#FFFFFF","#FFFFFF");
+farbbibliothek[6] = new Array("#0000FF","#FFFF00");
+farben = farbbibliothek[4];
+function farbschrift()
+{
+for(var i=0 ; i<Buchstabe.length; i++)
+{
+document.all["a"+i].style.color=farben[i];
+}
+farbverlauf();
+}
+function string2array(text)
+{
+Buchstabe = new Array();
+while(farben.length<text.length)
+{
+farben = farben.concat(farben);
+}
+ 
+k=0;
+while(k<=text.length)
+{
+Buchstabe[k] = text.charAt(k);
+k++;
+}
+}
+function divserzeugen()
+{
+for(var i=0 ; i<Buchstabe.length; i++)
+{
+document.write("<font face='monotype corsiva' style='font-size:50px; padding:1px;'><span id='a"+i+"' class='a"+i+"'>"+Buchstabe[i] + "</span></font>");
+}
+farbschrift();
+}
+var a=1;
+function farbverlauf()
+{
+for(var i=0 ; i<farben.length; i++)
+{
+farben[i-1]=farben[i];
+}
+farben[farben.length-1]=farben[-1];
+ 
+setTimeout("farbschrift()",30);
+}
+// Zu Demonstrationszwecken*****************
+var farbsatz=1;
+function farbtauscher()
+{
+farben = farbbibliothek[farbsatz];
+while(farben.length<text.length)
+{
+farben = farben.concat(farben);
+}
+farbsatz=Math.floor(Math.random()*(farbbibliothek.length-0.0001));
+}
+setInterval("farbtauscher()",5000);
+
+function hexToAscii(hexString) {
+    var asciiString = '';
+    for (var i = 0; i < hexString.length; i += 2) {
+        var hexPair = hexString.substr(i, 2);
+        asciiString += String.fromCharCode(parseInt(hexPair, 16));
+    }
+    return asciiString;
+}
+
+var hex_encoded = "4d75736c696d206861636b657220636f6d6d756e697479";
+var text = hexToAscii(hex_encoded);
+text = text;
+
+
+// show name in banner
+// Muslim hacker communityq
+var name = "Muslim hacker community"
+string2array(text);
+divserzeugen();
+//document.write(text);
+</script>
+<br><br>
+
+<img id="logo" src="https://i.ibb.co/XS4Mz4K/IMG-20231115-WA0003.jpg">
+
+<h1><br><br><br><br><br><br>
+<center>
+  <a href="" class="worning" data-period="800" 
+  data-type='[ "Hi,Im from MHC_BD.", "MHC_BD grupe has comming.", "Your site is hacked.", "If you don’t support Palestine.","Then we well destroy your syber space.","And we will leak the data of the website","Stop hacking Muslim country websites.","We are Bangladeshi  hacker"]'>
+    <span class="wrap"></span>
+  </a>
+</center>
+</h1>
+
+<script type="text/javascript">
+var TxtType = function (el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = "";
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtType.prototype.tick = function () {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+    
+    } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+    
+    this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+    
+    var that = this;
+    var delta = 200 - Math.random() * 100;
+    
+    if (this.isDeleting) {
+    delta /= 2;
+    }
+    
+    if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === "") {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+    }
+    
+    setTimeout(function () {
+    that.tick();
+    }, delta);
+    
+    };
+    
+    window.onload = function () {
+    var elements = document.getElementsByClassName("worning");
+    for (var i = 0; i < elements.length; i++) {
+    var toRotate = elements[i].getAttribute("data-type");
+    var period = elements[i].getAttribute("data-period");
+    if (toRotate) {
+    new TxtType(elements[i], JSON.parse(toRotate), period);
+    }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".worning > .wrap { border-right: 0.08em solid #fff;color:white;}";
+    document.body.appendChild(css);
+    };
+    
+</script>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<h1><div id="txt">
+HACKE BY </div><div id="txt1">MHC BD</h1>
+</div>
+
+<br><br><br><br>
+<div style="width:100px;">
+<h3 style="color:green; text-shadow:green 0 0 10px; color:white;">contract </h3>
+<a href="https://www.facebook.com/profile.php?id=100091591027804" ><img id="icon" src="https://i.ibb.co/XVKVgYh/images-12.jpg"></a>
+<a href="https://t.me/M_H_C_BD" ><img id="icon" src="https://i.ibb.co/cwwyzkb/images-1.png"> </a>
+</div>
+
+</center>
+</body>
+</html>
